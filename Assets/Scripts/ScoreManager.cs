@@ -14,7 +14,8 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager Instance;
 
     public TextMeshProUGUI scoreText;
-    int score = 0;
+    public int score = 0;
+    public int money;
   
     void Awake()
     {
@@ -32,6 +33,14 @@ public class ScoreManager : MonoBehaviour
         score += amount;
         UpdateScoreText();
 
+    }
+
+    public void Update()
+    {
+        if (0 >= Life)
+        {
+                money = score / 10 + money;
+        }
     }
 
     void UpdateScoreText()
