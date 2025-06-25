@@ -9,6 +9,8 @@ TagManager:
   - score
   - enemy
   - vida
+  - inimigotiro
+  - Audio
   layers:
   - Default
   - TransparentFX
