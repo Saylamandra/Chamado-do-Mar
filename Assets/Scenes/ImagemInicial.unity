@@ -767,7 +767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd950cd49a202ba4280c412fa45d5df8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeLoading: 2
+  delayBeforeLoading: 1.5
   sceneToLoad: StartMenu
 --- !u!4 &2116771116
 Transform:
