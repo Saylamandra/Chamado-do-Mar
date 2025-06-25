@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 607ae361f01ad1b48b0bcb06288f80c6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - checkboxEmpty: {fileID: 21300000, guid: 7df28af97c24a0d4ba6b4b57d960df24, type: 3}
+  - checkboxMarked: {fileID: 21300000, guid: f9fd356953773b14890358c83540e428, type: 3}
+  - checkboxImage: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
