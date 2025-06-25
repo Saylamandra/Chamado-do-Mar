@@ -2,6 +2,14 @@ using UnityEngine;
 
 public class ShootProjectile : MonoBehaviour
 {
+AudioManager audioManager;
+
+void Awake()
+{
+    audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+}
+
+
     public GameObject projectilePrefab; // Assign in Inspector
     public Transform spawnPoint; // Where the projectile spawns (e.g., gun barrel)
     public float shootForce = 10f;
@@ -10,6 +18,7 @@ public class ShootProjectile : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)) // Left-click or Fire input
         {
+            audioManager.PlaySFX(audioManager.Shot);
             Shoot();
         }
     }
