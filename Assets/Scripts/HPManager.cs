@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI; // necessário para Image
 using TMPro;
+using System.Data.SqlTypes;
 
 public class HPManager : MonoBehaviour
 {
@@ -47,6 +48,7 @@ public class HPManager : MonoBehaviour
             Debug.Log("Player morreu!");
             GameManager.Instance.TriggerGameOver();
             gameObject.SetActive(false);
+            
         }
     }
 
