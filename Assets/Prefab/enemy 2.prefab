@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3285235990988255660}
   - component: {fileID: 9136659395425335742}
   - component: {fileID: 2657674612991898212}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: enemy 2
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -165,6 +165,10 @@ PrefabInstance:
     - target: {fileID: 6692776305197670682, guid: 430d14348b79f1f4ab1c2c4a839d2422, type: 3}
       propertyPath: m_Name
       value: AguaVivaGrande
+      objectReference: {fileID: 0}
+    - target: {fileID: 6692776305197670682, guid: 430d14348b79f1f4ab1c2c4a839d2422, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

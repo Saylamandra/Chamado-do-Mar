@@ -51,5 +51,9 @@ public class Colisor : MonoBehaviour
             collision.gameObject.GetComponent<HPManager>().ChangeLife(-1);
             Destroy(gameObject);
         }
+        else if (collision.gameObject.CompareTag("shield"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

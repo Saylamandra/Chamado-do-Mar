@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6404952490702155582}
   - component: {fileID: 2001142248972121869}
   - component: {fileID: 4829662772020772803}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tiro
   m_TagString: tiro
   m_Icon: {fileID: 0}
@@ -163,6 +163,10 @@ PrefabInstance:
     - target: {fileID: 1876941115232921950, guid: 7aee13e65d6f8d9498012b4b164d7ba2, type: 3}
       propertyPath: m_Name
       value: TiroSubmarino
+      objectReference: {fileID: 0}
+    - target: {fileID: 1876941115232921950, guid: 7aee13e65d6f8d9498012b4b164d7ba2, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6697695186546922985, guid: 7aee13e65d6f8d9498012b4b164d7ba2, type: 3}
       propertyPath: m_LocalScale.x

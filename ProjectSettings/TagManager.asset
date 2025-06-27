@@ -9,6 +9,8 @@ TagManager:
   - score
   - enemy
   - vida
+  - inimigotiro
+  - shield
   layers:
   - Default
   - TransparentFX
@@ -18,9 +20,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Shield
+  - Projectile
   - 
   - 
   - 
