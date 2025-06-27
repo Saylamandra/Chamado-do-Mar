@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 1833632952684482929}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 392235847564530022, guid: e7a51ec1e14c3e64f883652ef1bc272c, type: 3}
+  shieldPrefab: {fileID: 0}
   spawnPoint: {fileID: 2454757237375811481}
   shootForce: 10
 --- !u!82 &62631421509366685
@@ -343,6 +344,10 @@ PrefabInstance:
     - target: {fileID: 2465914513829937012, guid: 0c26aea827675e849979e109459d3085, type: 3}
       propertyPath: m_Name
       value: Submarino
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465914513829937012, guid: 0c26aea827675e849979e109459d3085, type: 3}
+      propertyPath: m_TagString
+      value: player
       objectReference: {fileID: 0}
     - target: {fileID: 7484729372431588509, guid: 0c26aea827675e849979e109459d3085, type: 3}
       propertyPath: m_LocalPosition.x

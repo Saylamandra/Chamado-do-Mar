@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3285235990988255660}
   - component: {fileID: 9136659395425335742}
   - component: {fileID: 2657674612991898212}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: enemy
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -125,6 +125,10 @@ PrefabInstance:
     - target: {fileID: 1642438485000137995, guid: 1d43454008da12049a1e7fe6af6ba173, type: 3}
       propertyPath: m_Name
       value: Piranha
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642438485000137995, guid: 1d43454008da12049a1e7fe6af6ba173, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8875787430293369398, guid: 1d43454008da12049a1e7fe6af6ba173, type: 3}
       propertyPath: m_LocalPosition.x

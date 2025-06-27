@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3285235990988255660}
   - component: {fileID: 9136659395425335742}
   - component: {fileID: 2657674612991898212}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: littleEnemy
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -125,6 +125,10 @@ PrefabInstance:
     - target: {fileID: 3214567288952812778, guid: cf8af7735d818b444b86875d4a6edc26, type: 3}
       propertyPath: m_Name
       value: AguaVivaPequena
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214567288952812778, guid: cf8af7735d818b444b86875d4a6edc26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5371976904124392671, guid: cf8af7735d818b444b86875d4a6edc26, type: 3}
       propertyPath: m_LocalPosition.x
