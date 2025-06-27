@@ -233,9 +233,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 392235847564530022, guid: e7a51ec1e14c3e64f883652ef1bc272c, type: 3}
-  shieldPrefab: {fileID: 0}
+  shieldPrefab: {fileID: 7126522035999500301, guid: 3a5e057649efe0146bae0d0ff7b2ace6, type: 3}
   spawnPoint: {fileID: 2454757237375811481}
   shootForce: 10
+  shields: 1
 --- !u!82 &62631421509366685
 AudioSource:
   m_ObjectHideFlags: 0
@@ -246,7 +247,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -1254914252125167354, guid: 81e438fb2458b4546b1d59bbedcb2a61, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 7aa14ac69e650eb4480d5c575a0281b4, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7aa14ac69e650eb4480d5c575a0281b4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
