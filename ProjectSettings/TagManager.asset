@@ -12,6 +12,7 @@ TagManager:
   - inimigotiro
   - shield
   - Audio
+  - BossTiro
   layers:
   - Default
   - TransparentFX

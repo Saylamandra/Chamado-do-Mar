@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Colisor : MonoBehaviour
 {
-    //cria uma variavel
+    
 
     public float EnemyLife = 5;
 
