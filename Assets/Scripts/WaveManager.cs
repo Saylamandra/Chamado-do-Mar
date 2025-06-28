@@ -7,10 +7,8 @@ public class WaveManager : MonoBehaviour
     private bool levelCleared = false;
     public TextMeshProUGUI waveCounterText;
     public TextMeshProUGUI waveMessageText;
-    public GameObject levelClearPanel; 
+    public GameObject levelClearPanel;
     public EnemySpawner[] spawners; // arraste todos os spawners aqui pelo inspetor
-
-
 
     public int maxWaves = 5;
     private int currentWave = 1;
@@ -21,58 +19,58 @@ public class WaveManager : MonoBehaviour
     }
 
     private void Update()
-{
-    if (ScoreManager.Instance != null)
     {
-        if (currentWave < maxWaves && ScoreManager.Instance.GetScore() >= currentWave * 200)
+        if (ScoreManager.Instance != null)
         {
-            StartCoroutine(AdvanceWave());
-        }
-        else if (currentWave == maxWaves && ScoreManager.Instance.GetScore() >= currentWave * 200 && !levelCleared)
-        {
-            levelCleared = true;
-            levelClearPanel.SetActive(true);
+            if (currentWave < maxWaves && ScoreManager.Instance.GetScore() >= currentWave * 200)
+            {
+                StartCoroutine(AdvanceWave());
+            }
+            else if (currentWave == maxWaves && ScoreManager.Instance.GetScore() >= currentWave * 200 && !levelCleared)
+            {
+                levelCleared = true;
+                levelClearPanel.SetActive(true);
+
+                // PAUSA O JOGO QUANDO O PAINEL DE VITÓRIA APARECER
+                Time.timeScale = 0f;
+            }
         }
     }
-}
 
     IEnumerator AdvanceWave()
-{
-    currentWave++;
-
-    waveMessageText.text = "Wave Clear!";
-
-    // Para os spawners
-    foreach (var spawner in spawners)
     {
-        spawner.SetSpawning(false);
+        currentWave++;
+
+        waveMessageText.text = "Wave Clear!";
+
+        // Para os spawners
+        foreach (var spawner in spawners)
+        {
+            spawner.SetSpawning(false);
+        }
+
+        // Destroi todos os inimigos com a tag "enemy"
+        GameObject[] inimigos = GameObject.FindGameObjectsWithTag("enemy");
+        foreach (GameObject inimigo in inimigos)
+        {
+            Destroy(inimigo);
+        }
+
+        yield return new WaitForSeconds(2f);
+
+        // Libera os spawners novamente
+        foreach (var spawner in spawners)
+        {
+            spawner.SetWave(currentWave);
+            spawner.SetSpawning(true);
+        }
+
+        waveMessageText.text = "";
+        UpdateWaveText();
     }
-
-    // Destroi todos os inimigos com a tag "inimigo"
-    GameObject[] inimigos = GameObject.FindGameObjectsWithTag("enemy");
-    foreach (GameObject inimigo in inimigos)
-    {
-        Destroy(inimigo);
-    }
-
-    yield return new WaitForSeconds(2f);
-
-    // Libera os spawners novamente
-    foreach (var spawner in spawners)
-    {
-        spawner.SetWave(currentWave);
-        spawner.SetSpawning(true);
-    }
-
-    waveMessageText.text = "";
-    UpdateWaveText();
-}
-
-
 
     void UpdateWaveText()
     {
         waveCounterText.text = $"Wave {currentWave}/{maxWaves}";
     }
 }
-

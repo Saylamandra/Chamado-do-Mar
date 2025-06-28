@@ -3247,6 +3247,7 @@ GameObject:
   - component: {fileID: 98185159}
   - component: {fileID: 98185158}
   - component: {fileID: 98185157}
+  - component: {fileID: 98185160}
   m_Layer: 5
   m_Name: BtnBackMenu
   m_TagString: Untagged
@@ -3316,7 +3317,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 98185158}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 98185160}
+        m_TargetAssemblyTypeName: CheckboxBackMenu, Assembly-CSharp
+        m_MethodName: OnClickPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &98185158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3355,6 +3368,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98185155}
   m_CullTransparentMesh: 1
+--- !u!114 &98185160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98185155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 758b2e17460e06b4b88abfd5921c1f90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkboxEmpty: {fileID: 21300000, guid: 7df28af97c24a0d4ba6b4b57d960df24, type: 3}
+  checkboxMarked: {fileID: 21300000, guid: f9fd356953773b14890358c83540e428, type: 3}
+  sceneToLoad: StartMenu
 --- !u!1 &101669287
 GameObject:
   m_ObjectHideFlags: 0
@@ -22960,7 +22988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &854569533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23008,7 +23036,7 @@ RectTransform:
   m_GameObject: {fileID: 854569532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5979379, y: 0.65526, z: 0.65526}
+  m_LocalScale: {x: 0.46062493, y: 0.65526, z: 0.65526}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1767698677}
