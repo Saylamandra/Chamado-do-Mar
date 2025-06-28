@@ -2,33 +2,48 @@ using UnityEngine;
 
 public class Colisor : MonoBehaviour
 {
-    
-
     public float EnemyLife = 5;
 
     [Header("Pontuação")]
-    public int scoreValue = 10; 
+    public int scoreValue = 10;
 
     [Header("Divisão do inimigo")]
     public bool podeDividir = false;
     public GameObject prefablittleEnemy;
     public int quantidadeDividir = 0;
 
+    [Header("Boss Settings")]
+    public bool isBoss = false; // Marque essa opção no Inspector do boss
+    private BossLifeSpawner lifeSpawner;
+
+    void Start()
+    {
+        if (isBoss)
+        {
+            lifeSpawner = FindObjectOfType<BossLifeSpawner>();
+        }
+    }
+
     public void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Colisão detectada com " + collision.gameObject.name);
 
         if (collision.gameObject.CompareTag("tiro") && !collision.gameObject.CompareTag("inimigotiro"))
-
         {
             EnemyLife -= 1;
             Debug.Log("Vida atual do inimigo: " + EnemyLife);
+
+            // Se for o boss, registrar o hit para o spawn de vida
+            if (isBoss && lifeSpawner != null)
+            {
+                lifeSpawner.RegisterHit();
+            }
 
             if (EnemyLife <= 0)
             {
                 if (ScoreManager.Instance != null)
                 {
-                    ScoreManager.Instance.AddScore(scoreValue); // <<< Usa o valor configurado
+                    ScoreManager.Instance.AddScore(scoreValue);
                 }
 
                 // Divide em inimigos menores 
@@ -43,6 +58,10 @@ public class Colisor : MonoBehaviour
                 }
 
                 Destroy(gameObject);
+                Destroy(collision.gameObject);
+            }
+            else
+            {
                 Destroy(collision.gameObject);
             }
         }
