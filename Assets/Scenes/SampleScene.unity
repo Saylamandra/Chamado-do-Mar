@@ -8337,6 +8337,7 @@ MonoBehaviour:
   - {fileID: 3648487710549920101, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
   spawnPoints: []
   spawnInterval: 2
+  maxToughEnemies: 3
 --- !u!1 &304149609
 GameObject:
   m_ObjectHideFlags: 0
@@ -14016,6 +14017,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538316816}
   m_Mesh: {fileID: 1720634565417858130, guid: 16241c7d2a2cb0a408fe7f2f56ec12e1, type: 3}
+--- !u!1001 &545328636
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 164129544367463227, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.9548733
+      objectReference: {fileID: 0}
+    - target: {fileID: 164129544367463227, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 164129544367463227, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.32057762
+      objectReference: {fileID: 0}
+    - target: {fileID: 164129544367463227, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 164129544367463227, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164129544367463227, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164129544367463227, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164129544367463227, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164129544367463227, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164129544367463227, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648487710549920101, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
+      propertyPath: m_Name
+      value: TankEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648487710549920101, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
 --- !u!1 &545794230
 GameObject:
   m_ObjectHideFlags: 0
@@ -29769,6 +29831,7 @@ MonoBehaviour:
   - {fileID: 3648487710549920101, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
   spawnPoints: []
   spawnInterval: 2
+  maxToughEnemies: 3
 --- !u!1 &1080254291
 GameObject:
   m_ObjectHideFlags: 0
@@ -36355,12 +36418,14 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 3648487710549920101, guid: ae1ec24195cc0c54896785c61ba6b822, type: 3}
   - {fileID: 3648487710549920101, guid: 7790f4e4e34389540b860043bc7b9628, type: 3}
+  - {fileID: 3648487710549920101, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
   spawnPoints:
   - {fileID: 1298210439}
   - {fileID: 1982385151}
   - {fileID: 299713230}
   - {fileID: 1076746348}
   spawnInterval: 1
+  maxToughEnemies: 5
 --- !u!4 &1298210439
 Transform:
   m_ObjectHideFlags: 0
@@ -55500,6 +55565,7 @@ MonoBehaviour:
   - {fileID: 3648487710549920101, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
   spawnPoints: []
   spawnInterval: 2
+  maxToughEnemies: 3
 --- !u!1 &1988292010
 GameObject:
   m_ObjectHideFlags: 0
@@ -62441,3 +62507,4 @@ SceneRoots:
   - {fileID: 570573253328289152}
   - {fileID: 344010321}
   - {fileID: 1572743048}
+  - {fileID: 545328636}
