@@ -203,7 +203,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 239790099}
-        m_TargetAssemblyTypeName: CheckboxPlayButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: Checkbox, Assembly-CSharp
         m_MethodName: OnClickPlay
         m_Mode: 1
         m_Arguments:
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 239790094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 607ae361f01ad1b48b0bcb06288f80c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a879bc5e977f8a40ad3f8614f16cdc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   checkboxEmpty: {fileID: 21300000, guid: 7df28af97c24a0d4ba6b4b57d960df24, type: 3}
@@ -866,7 +866,7 @@ GameObject:
   - component: {fileID: 1794572577}
   - component: {fileID: 1794572576}
   - component: {fileID: 1794572575}
-  - component: {fileID: 1794572574}
+  - component: {fileID: 1794572578}
   m_Layer: 5
   m_Name: BntVolume
   m_TagString: Untagged
@@ -893,21 +893,6 @@ RectTransform:
   m_AnchoredPosition: {x: -282, y: 27}
   m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1794572574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794572572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 607ae361f01ad1b48b0bcb06288f80c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkboxEmpty: {fileID: 21300000, guid: 7df28af97c24a0d4ba6b4b57d960df24, type: 3}
-  checkboxMarked: {fileID: 21300000, guid: f9fd356953773b14890358c83540e428, type: 3}
-  sceneToLoad: VolumeMenu
 --- !u!114 &1794572575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,8 +937,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1794572574}
-        m_TargetAssemblyTypeName: CheckboxPlayButton, Assembly-CSharp
+      - m_Target: {fileID: 1794572578}
+        m_TargetAssemblyTypeName: Checkbox, Assembly-CSharp
         m_MethodName: OnClickPlay
         m_Mode: 1
         m_Arguments:
@@ -1002,6 +987,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794572572}
   m_CullTransparentMesh: 1
+--- !u!114 &1794572578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794572572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a879bc5e977f8a40ad3f8614f16cdc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkboxEmpty: {fileID: 21300000, guid: 7df28af97c24a0d4ba6b4b57d960df24, type: 3}
+  checkboxMarked: {fileID: 21300000, guid: f9fd356953773b14890358c83540e428, type: 3}
+  sceneToLoad: VolumeMenu
 --- !u!1 &1892445645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,7 +1103,7 @@ GameObject:
   - component: {fileID: 2001139895}
   - component: {fileID: 2001139894}
   - component: {fileID: 2001139893}
-  - component: {fileID: 2001139892}
+  - component: {fileID: 2001139896}
   m_Layer: 5
   m_Name: BntControles
   m_TagString: Untagged
@@ -1130,21 +1130,6 @@ RectTransform:
   m_AnchoredPosition: {x: 118, y: 177}
   m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2001139892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001139890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 607ae361f01ad1b48b0bcb06288f80c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkboxEmpty: {fileID: 21300000, guid: 7df28af97c24a0d4ba6b4b57d960df24, type: 3}
-  checkboxMarked: {fileID: 21300000, guid: f9fd356953773b14890358c83540e428, type: 3}
-  sceneToLoad: ControlesMenu
 --- !u!114 &2001139893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1189,8 +1174,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2001139892}
-        m_TargetAssemblyTypeName: CheckboxPlayButton, Assembly-CSharp
+      - m_Target: {fileID: 2001139896}
+        m_TargetAssemblyTypeName: Checkbox, Assembly-CSharp
         m_MethodName: OnClickPlay
         m_Mode: 1
         m_Arguments:
@@ -1239,6 +1224,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001139890}
   m_CullTransparentMesh: 1
+--- !u!114 &2001139896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001139890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a879bc5e977f8a40ad3f8614f16cdc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkboxEmpty: {fileID: 21300000, guid: 7df28af97c24a0d4ba6b4b57d960df24, type: 3}
+  checkboxMarked: {fileID: 21300000, guid: f9fd356953773b14890358c83540e428, type: 3}
+  sceneToLoad: ControlesMenu
 --- !u!1 &2086759002
 GameObject:
   m_ObjectHideFlags: 0
