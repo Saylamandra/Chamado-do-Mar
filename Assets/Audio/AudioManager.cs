@@ -34,17 +34,19 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
-    public void PlaySFX (AudioClip clip)
+    public void PlaySFX(AudioClip clip)
     {
         SFXSource.PlayOneShot(clip);
     }
 
     public void PlayMusic(AudioClip clip)
-{
-    if (musicSource.clip == clip) return; // já está tocando, não precisa mudar
-    musicSource.Stop();
-    musicSource.clip = clip;
-    musicSource.Play();
-}
+    {
+        if (musicSource.clip == clip) return; // já está tocando, não precisa mudar
+        musicSource.Stop();
+        musicSource.clip = clip;
+        musicSource.Play();
 
+        // Garante que o volume seja reaplicado após trocar a música
+        FindFirstObjectByType<VolumeSettings>()?.SetMusicVolume();
+    }
 }
