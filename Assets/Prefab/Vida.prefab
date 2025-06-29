@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2112576721747439896}
   - component: {fileID: 466052389348016832}
   - component: {fileID: 736463210873968310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Vida
   m_TagString: vida
   m_Icon: {fileID: 0}
@@ -249,6 +249,10 @@ PrefabInstance:
     - target: {fileID: 4333700952893147047, guid: 80aaa1edf638d8946a2c065f53510708, type: 3}
       propertyPath: m_Name
       value: peixeCoracao
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333700952893147047, guid: 80aaa1edf638d8946a2c065f53510708, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
