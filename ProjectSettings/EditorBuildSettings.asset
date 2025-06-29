@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 4702f62cea8c3ce4ca1db636de2275a4
+  - enabled: 1
     path: Assets/Scenes/CrabBoss.unity
     guid: 97f4eed7a1c8d77469256f478a2a495e
   m_configObjects:

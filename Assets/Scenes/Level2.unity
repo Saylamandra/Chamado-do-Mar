@@ -56619,8 +56619,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1298210439}
-  - component: {fileID: 1298210438}
   - component: {fileID: 1298210440}
+  - component: {fileID: 1298210441}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -56628,29 +56628,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1298210438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298210437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 481e7182d8bec6748b9ade85c164e4ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefabs:
-  - {fileID: 3648487710549920101, guid: ae1ec24195cc0c54896785c61ba6b822, type: 3}
-  - {fileID: 3648487710549920101, guid: 7790f4e4e34389540b860043bc7b9628, type: 3}
-  - {fileID: 3648487710549920101, guid: 31fbe75c8fe955e4dbf4bfbb9b440361, type: 3}
-  spawnPoints:
-  - {fileID: 1298210439}
-  - {fileID: 1982385151}
-  - {fileID: 299713230}
-  - {fileID: 1076746348}
-  spawnInterval: 1
-  maxToughEnemies: 5
 --- !u!4 &1298210439
 Transform:
   m_ObjectHideFlags: 0
@@ -56696,6 +56673,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1298210441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298210437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481e7182d8bec6748b9ade85c164e4ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 3648487710549920101, guid: 29e1ee6bf62c6a14d81a1fbb2ea052c8, type: 3}
+  - {fileID: 3648487710549920101, guid: 4b274b433bc50024bb3ffc0a806ad951, type: 3}
+  - {fileID: 3648487710549920101, guid: 9d3aa29ae4eb66240ae0abbe14ca2f61, type: 3}
+  spawnPoints:
+  - {fileID: 1298210439}
+  - {fileID: 1982385151}
+  - {fileID: 299713230}
+  - {fileID: 1076746348}
+  spawnInterval: 2
+  maxToughEnemies: 3
 --- !u!1 &1298505770
 GameObject:
   m_ObjectHideFlags: 0
@@ -75176,7 +75176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkboxEmpty: {fileID: 21300000, guid: 7df28af97c24a0d4ba6b4b57d960df24, type: 3}
   checkboxMarked: {fileID: 21300000, guid: f9fd356953773b14890358c83540e428, type: 3}
-  sceneToLoad: Level2
+  sceneToLoad: CrabBoss
 --- !u!1 &1770643028
 GameObject:
   m_ObjectHideFlags: 0
@@ -83413,7 +83413,7 @@ MonoBehaviour:
   waveMessageText: {fileID: 1660543769}
   levelClearPanel: {fileID: 854569532}
   spawners:
-  - {fileID: 1298210438}
+  - {fileID: 0}
   - {fileID: 1982385152}
   - {fileID: 299713231}
   - {fileID: 1076746349}
