@@ -25,7 +25,7 @@ public class EnemySpawner : MonoBehaviour
         if (wave == 1)
             spawnInterval = 2f;
         else if (wave == 2)
-            spawnInterval = 3f;
+            spawnInterval = 2f;
         else
             spawnInterval = 2f;
 

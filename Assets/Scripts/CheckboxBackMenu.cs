@@ -30,18 +30,17 @@ public class CheckboxBackMenu : MonoBehaviour
 
     IEnumerator LoadSceneAfterDelay()
     {
-        // Espera 0.3 segundos reais (independente do timeScale)
+        // Troca a música para a música do menu
+        AudioManager.instance.PlayMusic(AudioManager.instance.background);
+
         yield return new WaitForSecondsRealtime(0.3f);
 
-        // Garante que o tempo volte ao normal
         Time.timeScale = 1f;
 
-        // (Opcional) destrói o controlador de pausa, se ainda existir
         PauseController pauseController = Object.FindFirstObjectByType<PauseController>();
         if (pauseController != null)
             Destroy(pauseController.gameObject);
 
-        // Carrega a cena desejada
         SceneManager.LoadScene(sceneToLoad);
     }
 
