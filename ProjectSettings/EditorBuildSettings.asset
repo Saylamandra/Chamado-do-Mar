@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Lojinho.unity
     guid: af78f6014d32c3f45ad138d0d2df1e16
   - enabled: 1
+    path: Assets/Scenes/TelaCreditos.unity
+    guid: 55a821104030e214a9cb280a86e9d5af
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
