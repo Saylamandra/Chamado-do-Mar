@@ -83413,7 +83413,7 @@ MonoBehaviour:
   waveMessageText: {fileID: 1660543769}
   levelClearPanel: {fileID: 854569532}
   spawners:
-  - {fileID: 0}
+  - {fileID: 1298210441}
   - {fileID: 1982385152}
   - {fileID: 299713231}
   - {fileID: 1076746349}
