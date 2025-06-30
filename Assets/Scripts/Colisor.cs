@@ -16,11 +16,14 @@ public class Colisor : MonoBehaviour
     public bool isBoss = false; // Marque essa opção no Inspector do boss
     private BossLifeSpawner lifeSpawner;
 
+    private BossController bossController;
+
     void Start()
     {
         if (isBoss)
         {
-            lifeSpawner = FindObjectOfType<BossLifeSpawner>();
+            lifeSpawner = FindFirstObjectByType<BossLifeSpawner>();
+            bossController = GetComponent<BossController>();
         }
     }
 
@@ -46,7 +49,7 @@ public class Colisor : MonoBehaviour
                     ScoreManager.Instance.AddScore(scoreValue);
                 }
 
-                // Divide em inimigos menores 
+                // Divide em inimigos menores
                 if (podeDividir && prefablittleEnemy != null)
                 {
                     for (int i = 0; i < quantidadeDividir; i++)
@@ -67,8 +70,22 @@ public class Colisor : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("player"))
         {
-            collision.gameObject.GetComponent<HPManager>().ChangeLife(-1);
-            Destroy(gameObject);
+            if (isBoss && bossController != null && bossController.isCharging)
+            {
+                // Hit kill na investida
+                collision.gameObject.GetComponent<HPManager>().InstantKill();
+            }
+            else
+            {
+                // Dano normal no player
+                collision.gameObject.GetComponent<HPManager>().ChangeLife(-1);
+
+                // Se NÃO for o boss, destrói o inimigo
+                if (!isBoss)
+                {
+                    Destroy(gameObject);
+                }
+            }
         }
         else if (collision.gameObject.CompareTag("shield"))
         {
