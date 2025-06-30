@@ -1445,10 +1445,10 @@ RectTransform:
   - {fileID: 306649476}
   - {fileID: 1321490869}
   - {fileID: 54841207}
-  - {fileID: 1838566204}
   - {fileID: 1555512881}
   - {fileID: 1543356582}
   - {fileID: 932152521}
+  - {fileID: 1838566204}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
