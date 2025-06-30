@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 147fc6bddb134b44cb7c2bd141d4eab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyLife: 5
+  EnemyLife: 7
   scoreValue: 10
   podeDividir: 0
   prefablittleEnemy: {fileID: 0}
