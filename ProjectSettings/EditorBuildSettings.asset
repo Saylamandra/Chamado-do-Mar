@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CrabBoss.unity
     guid: 97f4eed7a1c8d77469256f478a2a495e
+  - enabled: 1
+    path: Assets/Scenes/LulaBoss.unity
+    guid: 952a2eaf9faa0554a800915359c42d69
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -52,6 +52,14 @@ public class HPManager : MonoBehaviour
         }
     }
 
+        public void InstantKill()
+        {
+            Life = 0;
+            ChangeLife(0); // atualiza a vida e verifica se morreu
+        }
+
+
+
     void UpdateHPDisplay()
     {
         if (HPText != null)
