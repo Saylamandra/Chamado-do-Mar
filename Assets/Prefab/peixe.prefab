@@ -190,7 +190,7 @@ MonoBehaviour:
   scoreValue: 15
   podeDividir: 1
   prefablittleEnemy: {fileID: 3648487710549920101, guid: 78962488fe6641d46b7c08c2e5d9312f, type: 3}
-  quantidadeDividir: 5
+  quantidadeDividir: 4
   isBoss: 0
 --- !u!195 &9136659395425335742
 NavMeshAgent:
