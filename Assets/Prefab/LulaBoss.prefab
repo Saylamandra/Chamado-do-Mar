@@ -135,6 +135,11 @@ MonoBehaviour:
   bossProjectile: {fileID: 5868507212943749853, guid: 11ea9f96ec13c0946983b5383546c50f, type: 3}
   shootTimer: 0
   shootInterval: 1
+  chargeCooldown: 8
+  chargeDuration: 0.5
+  returnSpeed: 5
+  chargeForce: 10
+  isCharging: 0
 --- !u!114 &1932595056846226427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,8 +264,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4062983, y: 0.9999998, z: 0.75498337}
-  m_Center: {x: -0.039758135, y: 0, z: -0.12250773}
+  m_Size: {x: 1.6595567, y: 0.9999998, z: 0.9011205}
+  m_Center: {x: -0.06489217, y: 0, z: -0.19557658}
 --- !u!1001 &1458647195416436752
 PrefabInstance:
   m_ObjectHideFlags: 0
