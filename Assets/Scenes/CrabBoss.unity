@@ -40191,7 +40191,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1767698681}
-        m_TargetAssemblyTypeName: CheckboxPlayButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: CheckboxBackMenu, Assembly-CSharp
         m_MethodName: OnClickPlay
         m_Mode: 1
         m_Arguments:
@@ -40249,7 +40249,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1767698676}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 607ae361f01ad1b48b0bcb06288f80c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 758b2e17460e06b4b88abfd5921c1f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   checkboxEmpty: {fileID: 21300000, guid: 7df28af97c24a0d4ba6b4b57d960df24, type: 3}
