@@ -45,7 +45,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3648487710549920101}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 147fc6bddb134b44cb7c2bd141d4eab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyLife: 7
+  EnemyLife: 1
   scoreValue: 10
   podeDividir: 0
   prefablittleEnemy: {fileID: 0}

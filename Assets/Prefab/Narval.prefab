@@ -76,7 +76,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3648487710549920101}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 147fc6bddb134b44cb7c2bd141d4eab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyLife: 6
+  EnemyLife: 1
   scoreValue: 25
   podeDividir: 0
   prefablittleEnemy: {fileID: 0}
@@ -131,6 +131,11 @@ MonoBehaviour:
   bossProjectile: {fileID: 392235847564530022, guid: 68669d8143bbdbb4abb6748b39e6a718, type: 3}
   shootTimer: 0
   shootInterval: 2
+  chargeCooldown: 8
+  chargeDuration: 0.5
+  returnSpeed: 5
+  chargeForce: 10
+  isCharging: 0
 --- !u!1 &7343550803580749187
 GameObject:
   m_ObjectHideFlags: 0
